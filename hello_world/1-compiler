@@ -1,3 +1,2 @@
 #!/bin/bash
-#!/bin/bash
 export CFILE=1-main.c ; echo -e "#include <stdio.h>\nint main() { printf(\"Hello, World!\\n\"); return 0; }" > $CFILE && ./1-compiler
