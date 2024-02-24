@@ -1,19 +1,22 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * main - function to print
- *
- * Return: 0
- */
+*  main - Prints putchar, followed by a new line
+*         and return 0
+*         Return: Always 0.
+*/
+
 int main(void)
 {
-	char holberton[9] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
-	unsigned int c;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	for (c = 0; c < sizeof(holberton); c++)
-	{
-		_putchar(holberton[c]);
-	}
-_putchar('\n');
-return (0);
+	return (0);
 }
