@@ -1,28 +1,29 @@
-#include "main.h"
+#include"main.h"
 /**
- * _strncpy - check the code for Holberton School students.
- * @src: parameter to a src to copy
- * @dest: parameter for dest
- * @n: parameter for number of bytes
- * Return: Always 0.
+ * _strncpy - copy n bytes fron src to dest pointers
+ * @dest: string
+ * @src: string to add
+ * @n: n bytes to copy
+ * Return: dest
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
-	int a = 0;
-	int b = 0;
+	int i = 0, l;
 
-	while (a != n)
+	while (src[i] != '\0')
 	{
-		dest[b] = src[a];
-		b++;
-		a++;
-		if (src[a] == '\0')
-		{
-			break;
-		}
+		i++;
 	}
-	while (b != n)
-		dest[b++] = '\0';
+	l = i - 1;
+
+	for (i = 0; src[i] != '\0' && i < n; i++)
+		dest[i] = src[i];
+	dest[i] = '\0';
+
+	if (n > l)
+	{
+		for (i = l; i < n; i++)
+			dest[i] = '\0';
+	}
 	return (dest);
 }
