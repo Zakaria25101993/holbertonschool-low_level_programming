@@ -1,20 +1,22 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    int a;
-    int b;
+	char s1[98] = "Hello ";
+	char s2[] = "World!\n";
+	char *p;
 
-    a = 98;
-    b = 42;
-    printf("a=%d, b=%d\n", a, b);
-    swap_int(&a, &b);
-    printf("a=%d, b=%d\n", a, b);
-    return (0);
+	printf("%s\n", s1);
+	printf("%s", s2);
+	p = _strcat(s1, s2);
+	printf("%s", s1);
+	printf("%s", s2);
+	printf("%s", p);
+	return (0);
 }
