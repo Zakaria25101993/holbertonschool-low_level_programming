@@ -1,10 +1,11 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-#include <stdio.h>
-#include <ctype.h>
+#ifndef main.h
+#define main.h
 
 int _putchar(char c);
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
+void reset_to_98(int *n);
+void swap_int(int *a, int *b);
+int _strlen(char *s);
+void _puts(char *str);
+void print_array(char *s);
+
+#endif
